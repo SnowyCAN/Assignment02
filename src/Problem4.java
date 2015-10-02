@@ -14,7 +14,7 @@ public class Problem4
 {
     static String convert(int n, int b)
     {
-        if (n==0 || n==b)
+        if (n==0||n==b)
             return "" + n;
         else if(b>10&&n==10)
             return "A";
@@ -40,7 +40,8 @@ public class Problem4
         int n=stuff.nextInt();
         System.out.println("Please enter the base number you wich to convert too: ");
         int b=stuff.nextInt();
-        String output=convert();
+        String output=convert(n,b);
+        System.out.println(output);
         
         
         
